@@ -15,7 +15,7 @@ sudo apt-get upgrade -y
 
 ```sh
 sudo adduser [frappe-user]
-usermod -a -G sudo [frappe-user]
+sudo usermod -a -G sudo [frappe-user]
 su [frappe-user] 
 cd /home/[frappe-user]
 ```
@@ -138,7 +138,7 @@ nvm install 18
 
 ```sh [步骤1]
 export NVM_DIR="$HOME/.nvm" && (
-  git clone https://github.com/nvm-sh/nvm.git "$NVM_DIR"
+  git clone https://atomgit.com/nvm-sh/nvm.git "$NVM_DIR"
   cd "$NVM_DIR"
 ) && \. "$NVM_DIR/nvm.sh"
 ```
