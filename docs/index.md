@@ -8,7 +8,7 @@ hero:
   tagline: 中文文档
   actions:
     - theme: brand
-      text: 安装部署
-      link: /install/
+      text: 部署手册
+      link: /guide/
 ---
 

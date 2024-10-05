@@ -13,11 +13,15 @@ export default defineConfig({
       // 当用户位于 `guide` 目录时，会显示此侧边栏
       '/guide/': [
         {
-          text: 'Guide',
+          text: '安装部署',
           items: [
-            { text: 'Index', link: '/guide/' },
-            { text: 'One', link: '/guide/one' },
-            { text: 'Two', link: '/guide/two' }
+            { text: '安装', link: '/guide/' }
+          ]
+        },
+        {
+          text: '设置',
+          items: [
+            { text: '配置HTTPS', link: '/guide/configuring-https' }
           ]
         }
       ],
