@@ -3,16 +3,16 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "EDocs"
+  text: "Documentation"
+  tagline: Online Document Station
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Guide
+      link: /guide/
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: API
+      link: /guide/api
 
 features:
   - title: Feature A
