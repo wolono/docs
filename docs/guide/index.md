@@ -137,20 +137,15 @@ nvm install 18
 ::: code-group
 
 ```sh [步骤1]
-export NVM_DIR="$HOME/.nvm" && (
-  git clone https://atomgit.com/nvm-sh/nvm.git "$NVM_DIR"
-  cd "$NVM_DIR"
-) && \. "$NVM_DIR/nvm.sh"
+curl https://gitee.com/mirrors/nvm/raw/v0.40.1/install.sh | bash
 ```
 
 ```sh [步骤2]
-sudo nano ~/.profile
+source ~/.profile
 ```
 
 ```sh [步骤3]
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+nvm install 18
 ```
 
 :::
