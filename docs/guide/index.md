@@ -24,48 +24,48 @@ cd /home/[frappe-user]
 ## 安装git
 
 ```sh
-sudo apt-get install git
+sudo apt-get install git -y
 ```
 ## 安装python和setuptools以及开发环境
 
 ```sh
-sudo apt-get install python3-dev python3.12-dev python3-setuptools python3-pip
+sudo apt-get install python3-dev python3.12-dev python3-setuptools python3-pip -y
 ```
 
 ## 安装Python 3.12虚拟环境
 
 ```sh
-sudo apt-get install python3.12-venv
+sudo apt-get install python3.12-venv -y
 ```
 
 ## 安装通用软件
 
 ```sh
-sudo apt-get install software-properties-common
+sudo apt-get install software-properties-common -y
 
 ```
 
 ## 安装mariaDB
 
 ```sh
-sudo apt install mariadb-server mariadb-client
+sudo apt install mariadb-server mariadb-client -y
 
 ```
 
 ## 安装redis server
 
 ```sh
-sudo apt-get install redis-server
+sudo apt-get install redis-server -y
 ```
 
 ## 安装wkhtmltopdf
 
 ```sh
-sudo apt-get install xvfb libfontconfig wkhtmltopdf
+sudo apt-get install xvfb libfontconfig wkhtmltopdf -y
 ```
 
 ```sh
-sudo apt-get install libmysqlclient-dev
+sudo apt-get install libmysqlclient-dev -y
 ```
 
 ## 安装和设置MySql server
@@ -105,7 +105,7 @@ default-character-set = utf8mb4
 ## 安装Curl
 
 ```sh
-sudo apt install curl
+sudo apt install curl -y
 ```
 
 ## 安装node
@@ -137,7 +137,7 @@ nvm install 18
 ::: code-group
 
 ```sh [步骤1]
-curl https://gitee.com/mirrors/nvm/raw/v0.40.1/install.sh | bash
+curl https://gitee.com/wolone/nvm/raw/develop/install.sh | bash
 ```
 
 ```sh [步骤2]
@@ -186,6 +186,8 @@ yarn config set registry https://registry.npmmirror.com/ --global
 
 ```sh
 pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
+```
+```sh
 pip config set install.trusted-host mirrors.aliyun.com
 ```
 
