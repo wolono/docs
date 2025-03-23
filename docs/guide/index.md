@@ -29,43 +29,7 @@ sudo apt-get install git -y
 ## 安装python和setuptools以及开发环境
 
 ```sh
-sudo apt-get install python3-dev python3.12-dev python3-setuptools python3-pip -y
-```
-
-## 安装Python 3.12虚拟环境
-
-```sh
-sudo apt-get install python3.12-venv -y
-```
-
-## 安装通用软件
-
-```sh
-sudo apt-get install software-properties-common -y
-
-```
-
-## 安装mariaDB
-
-```sh
-sudo apt install mariadb-server mariadb-client -y
-
-```
-
-## 安装redis server
-
-```sh
-sudo apt-get install redis-server -y
-```
-
-## 安装wkhtmltopdf
-
-```sh
-sudo apt-get install xvfb libfontconfig wkhtmltopdf -y
-```
-
-```sh
-sudo apt-get install libmysqlclient-dev -y
+sudo apt-get install python3-dev python3.12-dev python3-setuptools python3-pip python3.12-venv software-properties-common mariadb-server mariadb-client redis-server xvfb libfontconfig wkhtmltopdf libmysqlclient-dev curl -y
 ```
 
 ## 安装和设置MySql server
@@ -102,39 +66,9 @@ collation-server = utf8mb4_unicode_ci
 default-character-set = utf8mb4
 ```
 
-## 安装Curl
-
-```sh
-sudo apt install curl -y
-```
-
 ## 安装node
 
-::: tip 注意！
-下列安装方法任选其一
-:::
-
-### NVM(Github)
-
-::: code-group
-
-```sh [步骤1]
-curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-```
-
-```sh [步骤2]
-source ~/.profile
-```
-
-```sh [步骤3]
-nvm install 18
-```
-
-:::
-
 ### NVM(国内源) <Badge type="danger" text="推荐" />
-
-::: code-group
 
 ```sh [步骤1]
 curl https://gitee.com/wolone/nvm/raw/develop/install.sh | bash
@@ -147,22 +81,6 @@ source ~/.profile
 ```sh [步骤3]
 nvm install 18
 ```
-
-:::
-
-### Nodesource安装
-
-::: code-group
-
-```sh [步骤1]
-curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-```
-
-```sh [步骤2]
-sudo apt-get install nodejs -y
-```
-
-:::
 
 ## 配置npm国内加速镜像
 
@@ -201,8 +119,6 @@ sudo pip3 install frappe-bench --break-system-packages
 
 ### version-15
 
-::: code-group
-
 ```sh [官方源]
 bench init --frappe-branch version-15 frappe-bench
 ```
@@ -211,11 +127,7 @@ bench init --frappe-branch version-15 frappe-bench
 bench init --frappe-branch version-15 frappe-bench --frappe-path=https://atomgit.com/frappe/frappe --verbose
 ```
 
-:::
-
 ### develop
-
-::: code-group
 
 ```sh [官方源]
 bench init --frappe-branch develop frappe-bench
@@ -224,8 +136,6 @@ bench init --frappe-branch develop frappe-bench
 ```sh [国内源Atomgit]
 bench init --frappe-branch develop frappe-bench --frappe-path=https://atomgit.com/frappe/frappe --verbose
 ```
-
-:::
 
 ```sh
 cd frappe-bench
@@ -247,8 +157,6 @@ bench new-site [site-name]
 
 ### version-15
 
-::: code-group
-
 ```sh [官方源]
 bench get-app --branch version-15 erpnext
 ```
@@ -257,11 +165,7 @@ bench get-app --branch version-15 erpnext
 bench get-app --branch version-15 https://atomgit.com/frappe/erpnext
 ```
 
-:::
-
 ### develop
-
-::: code-group
 
 ```sh [官方源]
 bench get-app --branch develop erpnext
@@ -270,8 +174,6 @@ bench get-app --branch develop erpnext
 ```sh [国内源Atomgit]
 bench get-app --branch develop https://atomgit.com/frappe/erpnext
 ```
-
-:::
 
 ```sh
 bench install-app erpnext
