@@ -23,7 +23,7 @@ cd /home/[frappe-user]
 ## 安装python和setuptools以及开发环境
 
 ```sh
-sudo apt-get install python3-dev python3.12-dev python3-setuptools python3-pip python3.12-venv software-properties-common mariadb-server mariadb-client redis-server xvfb libfontconfig wkhtmltopdf libmysqlclient-dev curl pkg-config git -y
+sudo apt install git python-is-python3 python3-dev python3-venv python3-pip redis-server libmariadb-dev mariadb-server mariadb-client pkg-config xvfb libfontconfig wkhtmltopdf -y
 ```
 
 ## 安装和设置MySql server
