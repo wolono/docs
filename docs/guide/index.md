@@ -65,7 +65,8 @@ default-character-set = utf8mb4
 ### NVM(国内源) <Badge type="danger" text="推荐" />
 
 ```sh [步骤1]
-curl https://gitee.com/wolone/nvm/raw/develop/install.sh | bash
+export NVM_SOURCE="https://gitee.com/mirrors/nvm.git"
+curl -o- https://gitee.com/mirrors/nvm/raw/master/install.sh | bash
 ```
 
 ```sh [步骤2]
